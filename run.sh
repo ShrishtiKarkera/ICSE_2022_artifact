@@ -86,7 +86,7 @@ log "Switching to performance mode"
 sudo ./governor.sh pe
 
 # Test can be train or inference
-if [ "$test_type" == "train" ]; then
+if [ "$test_type" = "train" ]; then
   measurements="$PWD/measurements_train"
 else
   measurements="$PWD/measurements_inference"
